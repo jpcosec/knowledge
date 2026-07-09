@@ -1,0 +1,2492 @@
+id: atom-metadata-registry
+title: Atom metadata registry
+document_kind: atom_metadata_registry
+description: Metadata moved out of atom documents so atoms can remain pure knowledge
+  units.
+records:
+- atom_id: atom-about-concept-should-express-the-primary-semantic-target-of-an-atom
+  path: .knowledge/atoms/atom-about-concept-should-express-the-primary-semantic-target-of-an-atom.md
+  title: About concept should express the primary semantic target of an atom
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-anchor-bundles-should-combine-structural-textual-and-contextual-locators
+  path: .knowledge/atoms/atom-anchor-bundles-should-combine-structural-textual-and-contextual-locators.md
+  title: Anchor bundles should combine structural, textual, and contextual locators
+  provenance_statement: Derived from `spec/KB_SYSTEM_SPEC.md` and `spec/LEGACY_EXTRACTION_FROM_HUM_ECOSYSTEM.md`
+    as a synthesis of the recommended hybrid anchoring strategy and the role of anchor
+    bundles in a multi-source KB.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:kb_system_spec
+    source_kind:
+    - source_kind:spec
+    scope:
+    - scope:sample-validation
+    method:
+    - method:anchor-bundle
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-anchor-validation-should-bind-every-sample-to-a-source-artifact-version
+  path: .knowledge/atoms/atom-anchor-validation-should-bind-every-sample-to-a-source-artifact-version.md
+  title: Anchor validation should bind every sample to a source artifact version
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-anchored-in-should-connect-a-sample-to-the-locator-bundle-used-to-recover-it
+  path: .knowledge/atoms/atom-anchored-in-should-connect-a-sample-to-the-locator-bundle-used-to-recover-it.md
+  title: Anchored in should connect a sample to the locator bundle used to recover
+    it
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-api-snapshots-should-be-treated-as-versioned-structured-sources
+  path: .knowledge/atoms/atom-api-snapshots-should-be-treated-as-versioned-structured-sources.md
+  title: API snapshots should be treated as versioned structured sources
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-atom-answers-should-remain-stable-enough-to-be-recomposed-across-future-kb-layers
+  path: .knowledge/atoms/atom-atom-answers-should-remain-stable-enough-to-be-recomposed-across-future-kb-layers.md
+  title: Atom answers should remain stable enough to be recomposed across future KB
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-atom-status-tags-should-support-review-and-migration-governance
+  path: .knowledge/atoms/atom-atom-status-tags-should-support-review-and-migration-governance.md
+  title: Atom status tags should support review and migration governance
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-bridge-atoms-should-state-reusable-relations-rather-than-narrating-long-comparisons
+  path: .knowledge/atoms/atom-bridge-atoms-should-state-reusable-relations-rather-than-narrating-long-comparisons.md
+  title: Bridge atoms should state reusable relations rather than narrating long comparisons
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-code-sources-should-expose-symbol-aware-support-paths-in-addition-to-raw-text
+  path: .knowledge/atoms/atom-code-sources-should-expose-symbol-aware-support-paths-in-addition-to-raw-text.md
+  title: Code sources should expose symbol-aware support paths in addition to raw
+    text
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-composes-should-link-atoms-into-larger-synthesized-knowledge-artifacts
+  path: .knowledge/atoms/atom-composes-should-link-atoms-into-larger-synthesized-knowledge-artifacts.md
+  title: Composes should link atoms into larger synthesized knowledge artifacts
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-composition-should-provide-depth-without-inflating-atomic-answers
+  path: .knowledge/atoms/atom-composition-should-provide-depth-without-inflating-atomic-answers.md
+  title: Composition should provide depth without inflating atomic answers
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-contrasts-with-should-preserve-meaningful-conceptual-opposition-in-the-kb
+  path: .knowledge/atoms/atom-contrasts-with-should-preserve-meaningful-conceptual-opposition-in-the-kb.md
+  title: Contrasts with should preserve meaningful conceptual opposition in the KB
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-coverage-views-should-reveal-which-source-regions-have-not-yet-produced-atoms
+  path: .knowledge/atoms/atom-coverage-views-should-reveal-which-source-regions-have-not-yet-produced-atoms.md
+  title: Coverage views should reveal which source regions have not yet produced atoms
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-cross-project-synthesis-atoms-should-be-reviewable-independently-from-local-source-atoms
+  path: .knowledge/atoms/atom-cross-project-synthesis-atoms-should-be-reviewable-independently-from-local-source-atoms.md
+  title: Cross-project synthesis atoms should be reviewable independently from local
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-depends-on-should-express-knowledge-prerequisites-without-collapsing-them-into-hierarchy
+  path: .knowledge/atoms/atom-depends-on-should-express-knowledge-prerequisites-without-collapsing-them-into-hierarchy.md
+  title: Depends on should express knowledge prerequisites without collapsing them
+    into
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-derived-from-should-connect-transformed-knowledge-artifacts-across-representation-levels
+  path: .knowledge/atoms/atom-derived-from-should-connect-transformed-knowledge-artifacts-across-representation-levels.md
+  title: Derived from should connect transformed knowledge artifacts across representation
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-deskops-should-remain-the-operational-authoring-surface-for-the-bootstrap-corpus
+  path: .knowledge/atoms/atom-deskops-should-remain-the-operational-authoring-surface-for-the-bootstrap-corpus.md
+  title: Deskops should remain the operational authoring surface for the bootstrap
+    corpus
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:workflow_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-distilled-from-should-link-atoms-to-the-samples-they-abstract
+  path: .knowledge/atoms/atom-distilled-from-should-link-atoms-to-the-samples-they-abstract.md
+  title: Distilled from should link atoms to the samples they abstract
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-drawn-from-section-should-connect-a-support-object-to-an-explicit-source-section
+  path: .knowledge/atoms/atom-drawn-from-section-should-connect-a-support-object-to-an-explicit-source-section.md
+  title: Drawn from section should connect a support object to an explicit source
+    section
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-exact-quote-anchors-should-be-paired-with-structural-locators-when-possible
+  path: .knowledge/atoms/atom-exact-quote-anchors-should-be-paired-with-structural-locators-when-possible.md
+  title: Exact quote anchors should be paired with structural locators when possible
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-git-sources-should-support-repository-blob-commit-and-file-level-provenance
+  path: .knowledge/atoms/atom-git-sources-should-support-repository-blob-commit-and-file-level-provenance.md
+  title: Git sources should support repository blob commit and file-level provenance
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-governance-tags-should-help-detect-malformed-atoms-not-only-retrieve-them
+  path: .knowledge/atoms/atom-governance-tags-should-help-detect-malformed-atoms-not-only-retrieve-them.md
+  title: Governance tags should help detect malformed atoms not only retrieve them
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-graph-ui-should-visualize-lineage-concept-and-structure-perspectives-separately
+  path: .knowledge/atoms/atom-graph-ui-should-visualize-lineage-concept-and-structure-perspectives-separately.md
+  title: Graph UI should visualize lineage concept and structure perspectives separately
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-grouped-under-should-support-looser-conceptual-clustering-than-strict-hierarchy
+  path: .knowledge/atoms/atom-grouped-under-should-support-looser-conceptual-clustering-than-strict-hierarchy.md
+  title: Grouped under should support looser conceptual clustering than strict hierarchy
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-hum-scrapper-should-be-treated-as-a-source-acquisition-layer-not-as-knowledge-truth
+  path: .knowledge/atoms/atom-hum-scrapper-should-be-treated-as-a-source-acquisition-layer-not-as-knowledge-truth.md
+  title: Hum-scrapper should be treated as a source acquisition layer not as knowledge
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-json-and-yaml-sources-should-expose-object-path-projections-for-anchoring
+  path: .knowledge/atoms/atom-json-and-yaml-sources-should-expose-object-path-projections-for-anchoring.md
+  title: JSON and YAML sources should expose object-path projections for anchoring
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-kgdb-should-materialize-queryable-graph-projections-rather-than-documentary-truth
+  path: .knowledge/atoms/atom-kgdb-should-materialize-queryable-graph-projections-rather-than-documentary-truth.md
+  title: KGDB should materialize queryable graph projections rather than documentary
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-legacy-extraction-should-preserve-useful-architecture-intuitions-without-inheriting-obsolete-containers
+  path: .knowledge/atoms/atom-legacy-extraction-should-preserve-useful-architecture-intuitions-without-inheriting-obsolete-containers.md
+  title: Legacy extraction should preserve useful architecture intuitions without
+    inheriting
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:migration_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-located-in-taxonomy-should-place-atoms-or-concepts-within-a-navigable-hierarchy
+  path: .knowledge/atoms/atom-located-in-taxonomy-should-place-atoms-or-concepts-within-a-navigable-hierarchy.md
+  title: Located in taxonomy should place atoms or concepts within a navigable hierarchy
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-marcado-should-own-the-annotation-layer-over-samples
+  path: .knowledge/atoms/atom-marcado-should-own-the-annotation-layer-over-samples.md
+  title: Marcado should own the annotation layer over samples
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-materialized-diagrams-should-be-derived-views-over-atomized-architecture-knowledge
+  path: .knowledge/atoms/atom-materialized-diagrams-should-be-derived-views-over-atomized-architecture-knowledge.md
+  title: Materialized diagrams should be derived views over atomized architecture
+    knowledge
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-mentions-symbol-should-express-weaker-symbol-linkage-than-structural-support
+  path: .knowledge/atoms/atom-mentions-symbol-should-express-weaker-symbol-linkage-than-structural-support.md
+  title: Mentions symbol should express weaker symbol linkage than structural support
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-one-atom-may-be-supported-by-multiple-samples-from-multiple-sources
+  path: .knowledge/atoms/atom-one-atom-may-be-supported-by-multiple-samples-from-multiple-sources.md
+  title: One atom may be supported by multiple samples from multiple sources
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-ontomap-should-curate-explicit-concept-mappings-across-knowledge-regions
+  path: .knowledge/atoms/atom-ontomap-should-curate-explicit-concept-mappings-across-knowledge-regions.md
+  title: Ontomap should curate explicit concept mappings across knowledge regions
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-pdf-sources-need-text-structure-and-layout-projections-at-the-same-time
+  path: .knowledge/atoms/atom-pdf-sources-need-text-structure-and-layout-projections-at-the-same-time.md
+  title: PDF sources need text structure and layout projections at the same time
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-project-tags-should-distinguish-repository-context-from-system-identity
+  path: .knowledge/atoms/atom-project-tags-should-distinguish-repository-context-from-system-identity.md
+  title: Project tags should distinguish repository context from system identity
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-provenance-retrieval-and-concept-retrieval-should-remain-interoperable-but-distinct
+  path: .knowledge/atoms/atom-provenance-retrieval-and-concept-retrieval-should-remain-interoperable-but-distinct.md
+  title: Provenance retrieval and concept retrieval should remain interoperable but
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-queries-should-be-able-to-isolate-atoms-by-graph-stratum
+  path: .knowledge/atoms/atom-queries-should-be-able-to-isolate-atoms-by-graph-stratum.md
+  title: Queries should be able to isolate atoms by graph stratum
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-queries-should-be-able-to-isolate-atoms-by-grounding-maturity
+  path: .knowledge/atoms/atom-queries-should-be-able-to-isolate-atoms-by-grounding-maturity.md
+  title: Queries should be able to isolate atoms by grounding maturity
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-queries-should-be-able-to-isolate-atoms-that-still-need-samples
+  path: .knowledge/atoms/atom-queries-should-be-able-to-isolate-atoms-that-still-need-samples.md
+  title: Queries should be able to isolate atoms that still need samples
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-relation-mapping-should-drive-the-discovery-of-missing-entities-in-the-ontology
+  path: .knowledge/atoms/atom-relation-mapping-should-drive-the-discovery-of-missing-entities-in-the-ontology.md
+  title: Relation mapping should drive the discovery of missing entities in the ontology
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-repopackage-can-help-model-repository-structure-as-a-source-projection
+  path: .knowledge/atoms/atom-repopackage-can-help-model-repository-structure-as-a-source-projection.md
+  title: Repopackage can help model repository structure as a source projection
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-reports-should-be-treated-as-compositions-rather-than-as-primary-knowledge-atoms
+  path: .knowledge/atoms/atom-reports-should-be-treated-as-compositions-rather-than-as-primary-knowledge-atoms.md
+  title: Reports should be treated as compositions rather than as primary knowledge
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-sampled-from-should-link-a-sample-to-the-exact-source-artifact-it-comes-from
+  path: .knowledge/atoms/atom-sampled-from-should-link-a-sample-to-the-exact-source-artifact-it-comes-from.md
+  title: Sampled from should link a sample to the exact source artifact it comes from
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-samples-should-be-annotable-without-losing-their-deterministic-binding
+  path: .knowledge/atoms/atom-samples-should-be-annotable-without-losing-their-deterministic-binding.md
+  title: Samples should be annotable without losing their deterministic binding
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-secondary-about-should-capture-non-primary-conceptual-relevance-without-replacing-about-concept
+  path: .knowledge/atoms/atom-secondary-about-should-capture-non-primary-conceptual-relevance-without-replacing-about-concept.md
+  title: Secondary about should capture non-primary conceptual relevance without replacing
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-section-paths-symbol-paths-and-ast-paths-are-complementary-anchor-families
+  path: .knowledge/atoms/atom-section-paths-symbol-paths-and-ast-paths-are-complementary-anchor-families.md
+  title: Section paths symbol paths and AST paths are complementary anchor families
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-sldb-should-own-tracked-document-structure-for-future-kb-documents
+  path: .knowledge/atoms/atom-sldb-should-own-tracked-document-structure-for-future-kb-documents.md
+  title: SLDB should own tracked document structure for future KB documents
+  provenance_statement: Derived from `spec/source_apps/sldb.md` and `spec/DESKOPS_FOR_KNOWLEDGE_MANAGEMENT.md`
+    as a synthesis about where tracked KB document structure should live.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:sldb_source_app_spec
+    source_kind:
+    - source_kind:spec
+    scope:
+    - scope:future-kb-documents
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-sldb-ui-can-become-a-document-and-sample-inspection-surface-for-the-kb
+  path: .knowledge/atoms/atom-sldb-ui-can-become-a-document-and-sample-inspection-surface-for-the-kb.md
+  title: Sldb UI can become a document and sample inspection surface for the KB
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-source-adapters-should-emit-enough-metadata-to-reconstruct-retrieval-context
+  path: .knowledge/atoms/atom-source-adapters-should-emit-enough-metadata-to-reconstruct-retrieval-context.md
+  title: Source adapters should emit enough metadata to reconstruct retrieval context
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-source-adapters-should-expose-enough-structure-to-support-future-graph-derivation
+  path: .knowledge/atoms/atom-source-adapters-should-expose-enough-structure-to-support-future-graph-derivation.md
+  title: Source adapters should expose enough structure to support future graph derivation
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-source-identity-validation-should-precede-anchor-validation
+  path: .knowledge/atoms/atom-source-identity-validation-should-precede-anchor-validation.md
+  title: Source identity validation should precede anchor validation
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-source-kind-should-remain-a-first-class-governance-facet-in-the-atom-corpus
+  path: .knowledge/atoms/atom-source-kind-should-remain-a-first-class-governance-facet-in-the-atom-corpus.md
+  title: Source kind should remain a first-class governance facet in the atom corpus
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-source-oriented-atoms-and-synthesis-atoms-should-coexist-in-the-same-kb
+  path: .knowledge/atoms/atom-source-oriented-atoms-and-synthesis-atoms-should-coexist-in-the-same-kb.md
+  title: Source-oriented atoms and synthesis atoms should coexist in the same KB
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-spec2viz-should-generate-maintained-diagrams-from-structured-sources
+  path: .knowledge/atoms/atom-spec2viz-should-generate-maintained-diagrams-from-structured-sources.md
+  title: Spec2viz should generate maintained diagrams from structured sources
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:workflow_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-structural-graph-nodes-should-remain-projected-from-sources-rather-than-authored-as-primary-truths
+  path: .knowledge/atoms/atom-structural-graph-nodes-should-remain-projected-from-sources-rather-than-authored-as-primary-truths.md
+  title: Structural graph nodes should remain projected from sources rather than authored
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-subconcept-of-should-express-concept-hierarchy-independently-from-atom-placement
+  path: .knowledge/atoms/atom-subconcept-of-should-express-concept-hierarchy-independently-from-atom-placement.md
+  title: Subconcept of should express concept hierarchy independently from atom placement
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-support-queries-should-traverse-sources-samples-atoms-and-compositions-as-one-lineage-chain
+  path: .knowledge/atoms/atom-support-queries-should-traverse-sources-samples-atoms-and-compositions-as-one-lineage-chain.md
+  title: Support queries should traverse sources samples atoms and compositions as
+    one
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-supported-by-structure-should-link-atoms-to-source-structure-beyond-textual-excerpts
+  path: .knowledge/atoms/atom-supported-by-structure-should-link-atoms-to-source-structure-beyond-textual-excerpts.md
+  title: Supported by structure should link atoms to source structure beyond textual
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-supports-should-connect-evidence-to-the-atoms-or-compositions-it-justifies
+  path: .knowledge/atoms/atom-supports-should-connect-evidence-to-the-atoms-or-compositions-it-justifies.md
+  title: Supports should connect evidence to the atoms or compositions it justifies
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-bootstrap-corpus-should-accumulate-explicit-bridge-atoms-for-every-major-tool-relationship
+  path: .knowledge/atoms/atom-the-bootstrap-corpus-should-accumulate-explicit-bridge-atoms-for-every-major-tool-relationship.md
+  title: The bootstrap corpus should accumulate explicit bridge atoms for every major
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:workflow_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-bootstrap-kb-should-welcome-partial-provenance-without-confusing-it-with-validation
+  path: .knowledge/atoms/atom-the-bootstrap-kb-should-welcome-partial-provenance-without-confusing-it-with-validation.md
+  title: The bootstrap KB should welcome partial provenance without confusing it with
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-concept-graph-should-be-atom-centered-rather-than-concept-only
+  path: .knowledge/atoms/atom-the-concept-graph-should-be-atom-centered-rather-than-concept-only.md
+  title: The concept graph should be atom-centered rather than concept-only
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-first-bootstrap-corpus-should-prioritize-architecture-governance-and-provenance-atoms
+  path: .knowledge/atoms/atom-the-first-bootstrap-corpus-should-prioritize-architecture-governance-and-provenance-atoms.md
+  title: The first bootstrap corpus should prioritize architecture governance and
+    provenance
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:workflow_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-kb-should-avoid-fake-retroactive-samples-with-no-recoverable-evidence-path
+  path: .knowledge/atoms/atom-the-kb-should-avoid-fake-retroactive-samples-with-no-recoverable-evidence-path.md
+  title: The KB should avoid fake retroactive samples with no recoverable evidence
+    path
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:constraint
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-kb-should-avoid-flattening-all-source-structures-into-plain-text-only
+  path: .knowledge/atoms/atom-the-kb-should-avoid-flattening-all-source-structures-into-plain-text-only.md
+  title: The KB should avoid flattening all source structures into plain text only
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:constraint
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-kb-should-avoid-using-tags-as-a-substitute-for-explicit-relations
+  path: .knowledge/atoms/atom-the-kb-should-avoid-using-tags-as-a-substitute-for-explicit-relations.md
+  title: The KB should avoid using tags as a substitute for explicit relations
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:constraint
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-kb-should-distinguish-source-evidence-from-atom-level-synthesis
+  path: .knowledge/atoms/atom-the-kb-should-distinguish-source-evidence-from-atom-level-synthesis.md
+  title: The KB should distinguish source evidence from atom-level synthesis
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-kb-should-treat-notebooks-as-multi-projection-sources
+  path: .knowledge/atoms/atom-the-kb-should-treat-notebooks-as-multi-projection-sources.md
+  title: The KB should treat notebooks as multi-projection sources
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-ontology-loop-should-iterate-by-mapping-relations-before-freezing-entity-taxonomies
+  path: .knowledge/atoms/atom-the-ontology-loop-should-iterate-by-mapping-relations-before-freezing-entity-taxonomies.md
+  title: The ontology loop should iterate by mapping relations before freezing entity
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-the-source-sample-atom-composition-chain-should-remain-legible-to-humans
+  path: .knowledge/atoms/atom-the-source-sample-atom-composition-chain-should-remain-legible-to-humans.md
+  title: The source-sample-atom-composition chain should remain legible to humans
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-tractatusir-suggests-value-in-addressable-textual-units-for-retrieval
+  path: .knowledge/atoms/atom-tractatusir-suggests-value-in-addressable-textual-units-for-retrieval.md
+  title: TractatusIR suggests value in addressable textual units for retrieval
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-view-generation-should-be-reversible-back-to-atoms-and-evidence-links
+  path: .knowledge/atoms/atom-view-generation-should-be-reversible-back-to-atoms-and-evidence-links.md
+  title: View generation should be reversible back to atoms and evidence links
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-webpage-sources-should-be-snapshot-bound-before-they-are-sampled
+  path: .knowledge/atoms/atom-webpage-sources-should-be-snapshot-bound-before-they-are-sampled.md
+  title: Webpage sources should be snapshot-bound before they are sampled
+  provenance_statement: Bootstrap atom carried forward from the legacy Deskops atom
+    corpus (`desk/atoms/`). Exact originating source document(s), section-level anchors,
+    and sample bindings have not yet been curated; treat this as provisional corpus-level
+    provenance pending source-stub and sample backfill.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:desk_atoms_corpus
+    source_kind:
+    - source_kind:legacy_atom
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    grounding:
+    - grounding:derived
+- atom_id: atom-bootstrap-kb-should-treat-deskops-atoms-as-the-canonical-bootstrap-surface
+  path: .knowledge/atoms/kb/bootstrap/architecture/atom-bootstrap-kb-should-treat-deskops-atoms-as-the-canonical-bootstrap-surface.md
+  title: The bootstrap KB should treat current Deskops atoms as the canonical bootstrap
+    surface
+  provenance_statement: Derived from `kb/spec/BOOTSTRAP_KB_WITH_CURRENT_DESKOPS.md`
+    and `kb/spec/DESKOPS_FOR_KNOWLEDGE_MANAGEMENT.md`, with supporting observations
+    from the current `tutor_apoe/desk/atoms/` corpus.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:bootstrap_ingestion
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:architecture_decision
+    phase:
+    - phase:bootstrap
+    bootstrap:
+    - bootstrap:deskops_atom
+    - bootstrap:future_sample_target
+- atom_id: atom-cross-project-analysis-should-produce-bridge-atoms-not-only-local-notes
+  path: .knowledge/atoms/kb/bootstrap/architecture/atom-cross-project-analysis-should-produce-bridge-atoms-not-only-local-notes.md
+  title: Cross-project analysis should produce bridge atoms, not only local notes
+  provenance_statement: Derived from `kb/spec/LEGACY_EXTRACTION_FROM_HUM_ECOSYSTEM.md`
+    and the cross-tool review under `kb/spec/source_apps/`.
+  metadata_tags:
+    project:
+    - project:upla
+    - project:hum_ecosystem
+    source:
+    - source:hum_ecosystem_docs
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:architecture_doc
+    - source_kind:generated_spec
+    method:
+    - method:cross_project_synthesis
+    - method:legacy_extraction
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:ecosystem
+    role:
+    - role:bridge
+    phase:
+    - phase:bootstrap
+    legacy:
+    - legacy:hum_ecosystem
+- atom_id: atom-tags-should-be-facets-not-the-primary-concept-structure
+  path: .knowledge/atoms/kb/bootstrap/architecture/atom-tags-should-be-facets-not-the-primary-concept-structure.md
+  title: Tags should be facets, not the primary concept structure
+  provenance_statement: Derived from `kb/spec/ATOM_CONCEPT_GRAPH.md`, with direct
+    motivation from `tutor_apoe/desk/atoms/tag-namespaces.yaml` and `tutor_apoe/docs/diagrams/apos-atom-taxonomy.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    - project:tutor_apoe
+    source:
+    - source:kb_spec_docs
+    - source:tutor_apoe_atoms
+    source_kind:
+    - source_kind:generated_spec
+    - source_kind:taxonomy_doc
+    method:
+    - method:concept_modeling
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:cross_project
+    role:
+    - role:principle
+    phase:
+    - phase:concept_graph
+    bootstrap:
+    - bootstrap:facet_derived
+    - bootstrap:future_concept_target
+- atom_id: atom-concept-group-taxonomy-node-and-tag-facet-should-be-distinguished
+  path: .knowledge/atoms/kb/bootstrap/concept/atom-concept-group-taxonomy-node-and-tag-facet-should-be-distinguished.md
+  title: ConceptGroup, TaxonomyNode, and TagFacet should be distinguished
+  provenance_statement: Derived from `kb/spec/ATOM_CONCEPT_GRAPH.md` and `kb/spec/ATOM_CONCEPT_GRAPH_SCHEMA.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:concept_modeling
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    phase:
+    - phase:concept_graph
+    bootstrap:
+    - bootstrap:future_concept_target
+- atom_id: atom-folder-taxonomy-can-seed-the-concept-graph-without-being-the-final-ontology
+  path: .knowledge/atoms/kb/bootstrap/concept/atom-folder-taxonomy-can-seed-the-concept-graph-without-being-the-final-ontology.md
+  title: Folder taxonomy can seed the concept graph without being the final ontology
+  provenance_statement: Derived from `tutor_apoe/docs/diagrams/apos-atom-taxonomy.md`,
+    `tutor_apoe/desk/atoms/`, and `kb/spec/ATOM_CONCEPT_GRAPH.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    - project:tutor_apoe
+    source:
+    - source:tutor_apoe_atoms
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:markdown
+    - source_kind:generated_spec
+    method:
+    - method:taxonomy_extraction
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:cross_project
+    role:
+    - role:mapping
+    phase:
+    - phase:taxonomy
+    bootstrap:
+    - bootstrap:taxonomy_derived
+    - bootstrap:future_concept_target
+- atom_id: atom-question-type-should-remain-an-explicit-governance-dimension
+  path: .knowledge/atoms/kb/bootstrap/concept/atom-question-type-should-remain-an-explicit-governance-dimension.md
+  title: Question type should remain an explicit governance dimension
+  provenance_statement: Derived from `kb/spec/BOOTSTRAP_KB_WITH_CURRENT_DESKOPS.md`
+    and the current APOS Deskops atom corpus under `tutor_apoe/desk/atoms/`.
+  metadata_tags:
+    project:
+    - project:upla
+    - project:tutor_apoe
+    source:
+    - source:kb_spec_docs
+    - source:tutor_apoe_atoms
+    source_kind:
+    - source_kind:generated_spec
+    - source_kind:markdown
+    method:
+    - method:concept_modeling
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:cross_project
+    role:
+    - role:governance_rule
+    phase:
+    - phase:concept_graph
+    bootstrap:
+    - bootstrap:deskops_atom
+- atom_id: atom-bootstrap-kb-must-preserve-current-atom-ids-and-five-wh-one-plus-discipline
+  path: .knowledge/atoms/kb/bootstrap/governance/atom-bootstrap-kb-must-preserve-current-atom-ids-and-five-wh-one-plus-discipline.md
+  title: The bootstrap KB must preserve current atom ids and 5WH1+ discipline
+  provenance_statement: Derived from `kb/spec/BOOTSTRAP_KB_WITH_CURRENT_DESKOPS.md`
+    and the observed structure of the current `tutor_apoe/desk/atoms/` corpus.
+  metadata_tags:
+    project:
+    - project:upla
+    - project:tutor_apoe
+    source:
+    - source:kb_spec_docs
+    - source:tutor_apoe_atoms
+    source_kind:
+    - source_kind:generated_spec
+    - source_kind:markdown
+    method:
+    - method:bootstrap_ingestion
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:cross_project
+    role:
+    - role:constraint
+    phase:
+    - phase:bootstrap
+    bootstrap:
+    - bootstrap:deskops_atom
+- atom_id: atom-every-bootstrap-atom-should-carry-project-source-and-grounding-tags
+  path: .knowledge/atoms/kb/bootstrap/governance/atom-every-bootstrap-atom-should-carry-project-source-and-grounding-tags.md
+  title: Every bootstrap atom should carry project, source, and grounding tags
+  provenance_statement: Derived from `kb/spec/NAMESPACE_TREE.md` and the tag-governance
+    analysis that motivated the bootstrap tag taxonomy.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:bootstrap_ingestion
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    phase:
+    - phase:bootstrap
+    bootstrap:
+    - bootstrap:deskops_atom
+- atom_id: atom-the-kb-needs-three-connected-graph-strata
+  path: .knowledge/atoms/kb/bootstrap/graph/atom-the-kb-needs-three-connected-graph-strata.md
+  title: The KB needs three connected graph strata
+  provenance_statement: Derived from `kb/spec/GRAPH_ARCHITECTURE.md`, `kb/spec/ATOM_CONCEPT_GRAPH.md`,
+    and `kb/spec/THREE_GRAPH_MODEL_DIAGRAMS.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:cross_project_synthesis
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:principle
+    phase:
+    - phase:concept_graph
+    bootstrap:
+    - bootstrap:future_concept_target
+    - bootstrap:future_structure_target
+- atom_id: atom-graphlang-is-relevant-as-a-query-and-representation-ambition-not-as-final-foundation
+  path: .knowledge/atoms/kb/bootstrap/legacy/atom-graphlang-is-relevant-as-a-query-and-representation-ambition-not-as-final-foundation.md
+  title: Graphlang is relevant as a query and representation ambition, not as final
+    foundation
+  provenance_statement: Derived from `hum-ecosystem/docs/architecture/graphlang/README.md`
+    and `kb/spec/LEGACY_EXTRACTION_FROM_HUM_ECOSYSTEM.md`.
+  metadata_tags:
+    project:
+    - project:hum_ecosystem
+    source:
+    - source:hum_ecosystem_docs
+    source_kind:
+    - source_kind:architecture_doc
+    method:
+    - method:legacy_extraction
+    grounding:
+    - grounding:textual_only
+    scope:
+    - scope:ecosystem
+    role:
+    - role:bridge
+    phase:
+    - phase:bootstrap
+    legacy:
+    - legacy:hum_ecosystem
+    - legacy:graphlang
+- atom_id: atom-kg-trees-contribute-the-idea-of-structured-knowledge-branching
+  path: .knowledge/atoms/kb/bootstrap/legacy/atom-kg-trees-contribute-the-idea-of-structured-knowledge-branching.md
+  title: KG-Trees contribute the idea of structured knowledge branching
+  provenance_statement: Derived from `hum-ecosystem/docs/concepts/KG_TREES.md` as
+    synthesized in `kb/spec/LEGACY_EXTRACTION_FROM_HUM_ECOSYSTEM.md`.
+  metadata_tags:
+    project:
+    - project:hum_ecosystem
+    source:
+    - source:hum_ecosystem_docs
+    source_kind:
+    - source_kind:concept_doc
+    method:
+    - method:legacy_extraction
+    grounding:
+    - grounding:textual_only
+    scope:
+    - scope:ecosystem
+    role:
+    - role:bridge
+    phase:
+    - phase:bootstrap
+    legacy:
+    - legacy:hum_ecosystem
+    - legacy:kg_trees
+- atom_id: atom-the-nl-sl-kg-pipeline-anticipates-a-source-to-graph-transformation-line
+  path: .knowledge/atoms/kb/bootstrap/legacy/atom-the-nl-sl-kg-pipeline-anticipates-a-source-to-graph-transformation-line.md
+  title: The NL-SL-KG pipeline anticipates a source-to-graph transformation line
+  provenance_statement: Derived from `hum-ecosystem/docs/architecture/nl_sl_kg_pipeline.md`
+    as synthesized in `kb/spec/LEGACY_EXTRACTION_FROM_HUM_ECOSYSTEM.md`.
+  metadata_tags:
+    project:
+    - project:hum_ecosystem
+    source:
+    - source:hum_ecosystem_docs
+    source_kind:
+    - source_kind:architecture_doc
+    method:
+    - method:legacy_extraction
+    grounding:
+    - grounding:textual_only
+    scope:
+    - scope:ecosystem
+    role:
+    - role:bridge
+    phase:
+    - phase:bootstrap
+    legacy:
+    - legacy:hum_ecosystem
+    - legacy:nl_sl_kg_pipeline
+- atom_id: atom-the-universal-knowledge-loop-contributes-a-process-view-not-a-storage-model
+  path: .knowledge/atoms/kb/bootstrap/legacy/atom-the-universal-knowledge-loop-contributes-a-process-view-not-a-storage-model.md
+  title: The universal knowledge loop contributes a process view, not a storage model
+  provenance_statement: Derived from `hum-ecosystem/docs/architecture/universal_knowledge_loop.md`
+    and `kb/spec/LEGACY_EXTRACTION_FROM_HUM_ECOSYSTEM.md`.
+  metadata_tags:
+    project:
+    - project:hum_ecosystem
+    source:
+    - source:hum_ecosystem_docs
+    source_kind:
+    - source_kind:architecture_doc
+    method:
+    - method:legacy_extraction
+    grounding:
+    - grounding:textual_only
+    scope:
+    - scope:ecosystem
+    role:
+    - role:bridge
+    phase:
+    - phase:bootstrap
+    legacy:
+    - legacy:hum_ecosystem
+    - legacy:universal_knowledge_loop
+- atom_id: atom-historical-atoms-should-be-backfilled-by-value-and-use-not-all-at-once
+  path: .knowledge/atoms/kb/bootstrap/migration/atom-historical-atoms-should-be-backfilled-by-value-and-use-not-all-at-once.md
+  title: Historical atoms should be backfilled by value and use, not all at once
+  provenance_statement: Derived from `kb/spec/BOOTSTRAP_KB_WITH_CURRENT_DESKOPS.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    - project:tutor_apoe
+    source:
+    - source:kb_spec_docs
+    - source:tutor_apoe_atoms
+    source_kind:
+    - source_kind:generated_spec
+    - source_kind:markdown
+    method:
+    - method:bootstrap_ingestion
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:cross_project
+    role:
+    - role:migration_rule
+    phase:
+    - phase:backfill
+    bootstrap:
+    - bootstrap:future_sample_target
+- atom_id: atom-new-work-should-create-sample-ready-atoms-even-before-full-backfill
+  path: .knowledge/atoms/kb/bootstrap/migration/atom-new-work-should-create-sample-ready-atoms-even-before-full-backfill.md
+  title: New work should create sample-ready atoms even before full backfill
+  provenance_statement: Derived from `kb/spec/BOOTSTRAP_KB_WITH_CURRENT_DESKOPS.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:bootstrap_ingestion
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:migration_rule
+    phase:
+    - phase:sample_first
+    bootstrap:
+    - bootstrap:future_sample_target
+- atom_id: atom-bootstrap-kb-should-track-grounding-status-explicitly
+  path: .knowledge/atoms/kb/bootstrap/provenance/atom-bootstrap-kb-should-track-grounding-status-explicitly.md
+  title: The bootstrap KB should track grounding status explicitly
+  provenance_statement: Derived from `kb/spec/BOOTSTRAP_KB_WITH_CURRENT_DESKOPS.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:provenance_analysis
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    phase:
+    - phase:provenance_minimum
+    bootstrap:
+    - bootstrap:provenance_text
+    - bootstrap:future_sample_target
+- atom_id: atom-bootstrap-provenance-should-begin-with-source-stubs-before-full-samples
+  path: .knowledge/atoms/kb/bootstrap/provenance/atom-bootstrap-provenance-should-begin-with-source-stubs-before-full-samples.md
+  title: Bootstrap provenance should begin with source stubs before full samples
+  provenance_statement: Derived from `kb/spec/BOOTSTRAP_KB_WITH_CURRENT_DESKOPS.md`
+    and `kb/spec/MULTI_SOURCE_ANCHORING.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:provenance_analysis
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:migration_rule
+    phase:
+    - phase:provenance_minimum
+    bootstrap:
+    - bootstrap:source_stub
+    - bootstrap:future_sample_target
+- atom_id: atom-grounding-status-should-distinguish-textual-human-and-validated-support
+  path: .knowledge/atoms/kb/bootstrap/provenance/atom-grounding-status-should-distinguish-textual-human-and-validated-support.md
+  title: Grounding status should distinguish textual, human-located, and validated
+    support
+  provenance_statement: Derived from `kb/spec/BOOTSTRAP_KB_WITH_CURRENT_DESKOPS.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:provenance_analysis
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+    phase:
+    - phase:provenance_minimum
+    bootstrap:
+    - bootstrap:provenance_text
+- atom_id: atom-samples-should-be-the-evidence-objects-between-sources-and-atoms
+  path: .knowledge/atoms/kb/bootstrap/provenance/atom-samples-should-be-the-evidence-objects-between-sources-and-atoms.md
+  title: Samples should be the evidence objects between sources and atoms
+  provenance_statement: Derived from `kb/spec/MULTI_SOURCE_ANCHORING.md` and `kb/spec/GRAPH_ARCHITECTURE.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:provenance_analysis
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    phase:
+    - phase:sample_first
+    bootstrap:
+    - bootstrap:future_sample_target
+- atom_id: atom-the-provenance-graph-is-the-relational-backbone-of-the-kb
+  path: .knowledge/atoms/kb/bootstrap/provenance/atom-the-provenance-graph-is-the-relational-backbone-of-the-kb.md
+  title: The provenance graph is the relational backbone of the KB
+  provenance_statement: Derived from `kb/spec/GRAPH_ARCHITECTURE.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:provenance_analysis
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+    phase:
+    - phase:bootstrap
+    bootstrap:
+    - bootstrap:future_sample_target
+- atom_id: atom-cross-tags-should-mark-bridge-knowledge-between-systems-and-projects
+  path: .knowledge/atoms/kb/bootstrap/query/atom-cross-tags-should-mark-bridge-knowledge-between-systems-and-projects.md
+  title: Cross tags should mark bridge knowledge between systems and projects
+  provenance_statement: Derived from `kb/spec/NAMESPACE_TREE.md` and `kb/spec/LEGACY_EXTRACTION_FROM_HUM_ECOSYSTEM.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:cross_project_synthesis
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:ecosystem
+    role:
+    - role:bridge
+    phase:
+    - phase:bootstrap
+- atom_id: atom-the-kb-should-support-queries-by-source-project-and-crossing
+  path: .knowledge/atoms/kb/bootstrap/query/atom-the-kb-should-support-queries-by-source-project-and-crossing.md
+  title: The KB should support queries by source, project, and crossing
+  provenance_statement: Derived from the tag-governance design captured in `kb/spec/NAMESPACE_TREE.md`
+    and the bootstrap tag taxonomy.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:cross_project_synthesis
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:query_surface
+    phase:
+    - phase:bootstrap
+- atom_id: atom-each-source-type-should-expose-its-own-retrievable-projections
+  path: .knowledge/atoms/kb/bootstrap/source/atom-each-source-type-should-expose-its-own-retrievable-projections.md
+  title: Each source type should expose its own retrievable projections
+  provenance_statement: Derived from `kb/spec/MULTI_SOURCE_ANCHORING.md` and `kb/spec/source_apps/SYNTHESIZED_ARCHITECTURE.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:structure_projection
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:principle
+    phase:
+    - phase:sample_first
+    bootstrap:
+    - bootstrap:future_structure_target
+    - bootstrap:future_sample_target
+- atom_id: atom-the-source-layer-must-be-multi-source-and-adapter-based
+  path: .knowledge/atoms/kb/bootstrap/source/atom-the-source-layer-must-be-multi-source-and-adapter-based.md
+  title: The source layer must be multi-source and adapter-based
+  provenance_statement: Derived from `kb/spec/MULTI_SOURCE_ANCHORING.md` and `kb/spec/source_apps/SYNTHESIZED_ARCHITECTURE.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:source_app_analysis
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:principle
+    phase:
+    - phase:sample_first
+    bootstrap:
+    - bootstrap:future_sample_target
+- atom_id: atom-ast-is-a-first-class-document-structure-category-in-the-kb
+  path: .knowledge/atoms/kb/bootstrap/structure/atom-ast-is-a-first-class-document-structure-category-in-the-kb.md
+  title: AST is a first-class document structure category in the KB
+  provenance_statement: Derived from `kb/spec/MULTI_SOURCE_ANCHORING.md` and the updated
+    component and anchoring diagrams built from that document.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:structure_projection
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:invariant
+    phase:
+    - phase:structural_graph
+    bootstrap:
+    - bootstrap:future_structure_target
+- atom_id: atom-deskops-is-a-bootstrap-surface-not-the-final-kb-container
+  path: .knowledge/atoms/kb/bootstrap/workflow/atom-deskops-is-a-bootstrap-surface-not-the-final-kb-container.md
+  title: Deskops is a bootstrap surface, not the final KB container
+  provenance_statement: Derived from `kb/spec/DESKOPS_FOR_KNOWLEDGE_MANAGEMENT.md`
+    and `kb/spec/BOOTSTRAP_KB_WITH_CURRENT_DESKOPS.md`.
+  metadata_tags:
+    project:
+    - project:upla
+    source:
+    - source:kb_spec_docs
+    source_kind:
+    - source_kind:generated_spec
+    method:
+    - method:bootstrap_ingestion
+    grounding:
+    - grounding:cross_inferred
+    scope:
+    - scope:meta
+    role:
+    - role:constraint
+    phase:
+    - phase:bootstrap
+    bootstrap:
+    - bootstrap:deskops_atom
+- atom_id: atom-knowledge-cli-should-separate-knowledge-operations-from-operational-workflow
+  path: .knowledge/atoms/atom-knowledge-cli-should-separate-knowledge-operations-from-operational-workflow.md
+  title: Knowledge CLI should separate knowledge operations from operational workflow
+  provenance_statement: Derived from `spec/source_apps/deskops.md`, `spec/DESKOPS_FOR_KNOWLEDGE_MANAGEMENT.md`,
+    `spec/ATOM_METADATA_DOC.md`, and the local `knowledge` CLI implementation.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:meta
+    role:
+    - role:architecture_decision
+- atom_id: atom-atom-metadata-should-live-outside-atoms-in-a-dedicated-registry
+  path: .knowledge/atoms/atom-atom-metadata-should-live-outside-atoms-in-a-dedicated-registry.md
+  title: Atom metadata should live outside atoms in a dedicated registry
+  provenance_statement: Derived from `spec/ATOM_METADATA_DOC.md`, `spec/atom_quality/ATOM_AUTHORING_STANDARD.md`,
+    `spec/atom_quality/ATOM_TAGGING_AND_PROVENANCE_CONVENTIONS.md`, and `metadata/atoms/atom-metadata-registry.yaml`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:atom_metadata_registry
+    source_kind:
+    - source_kind:generated_spec
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+- atom_id: atom-knowledge-graph-commands-should-remain-available-without-the-operational-workflow-surface
+  path: .knowledge/atoms/atom-knowledge-graph-commands-should-remain-available-without-the-operational-workflow-surface.md
+  title: Knowledge graph commands should remain available without the operational
+    workflow surface
+  provenance_statement: Derived from `spec/source_apps/deskops.md`, `spec/DESKOPS_FOR_KNOWLEDGE_MANAGEMENT.md`,
+    and the local `knowledge` CLI graph commands.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:meta
+    role:
+    - role:modeling_rule
+- atom_id: atom-frontmatter-provenance-should-remain-trace-text-not-the-full-governance-envelope
+  path: .knowledge/atoms/atom-frontmatter-provenance-should-remain-trace-text-not-the-full-governance-envelope.md
+  title: Frontmatter provenance should remain trace text, not the full governance
+    envelope
+  provenance_statement: Derived from `spec/ATOM_METADATA_DOC.md`, `spec/atom_quality/ATOM_AUTHORING_STANDARD.md`,
+    and `spec/atom_quality/ATOM_TAGGING_AND_PROVENANCE_CONVENTIONS.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:atom_metadata_registry
+    source_kind:
+    - source_kind:generated_spec
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:meta
+    role:
+    - role:definition
+- atom_id: atom-atom-semantic-tags-should-be-limited-to-the-namespace-allowlist-defined-in-tag-namespaces-yaml
+  path: .knowledge/atoms/atom-atom-semantic-tags-should-be-limited-to-the-namespace-allowlist-defined-in-tag-namespaces-yaml.md
+  title: Atom semantic tags should be limited to the namespace allowlist defined in
+    tag-namespaces.yaml
+  provenance_statement: Derived from `desk/atoms/tag-namespaces.yaml` and the local
+    `knowledge` CLI implementation.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:tag_namespaces_yaml
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+- atom_id: atom-regex-valid-metadata-namespaces-should-still-be-excluded-from-atom-tags
+  path: .knowledge/atoms/atom-regex-valid-metadata-namespaces-should-still-be-excluded-from-atom-tags.md
+  title: Regex-valid metadata namespaces should still be excluded from atom tags
+  provenance_statement: Derived from `knowledge`, `spec/ATOM_METADATA_DOC.md`, and
+    `desk/atoms/tag-namespaces.yaml`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+- atom_id: atom-cross-tags-belong-on-atoms-only-when-the-bridge-is-part-of-the-claim-itself
+  path: .knowledge/atoms/atom-cross-tags-belong-on-atoms-only-when-the-bridge-is-part-of-the-claim-itself.md
+  title: Cross tags belong on atoms only when the bridge is part of the claim itself
+  provenance_statement: Derived from `desk/atoms/tag-namespaces.yaml`, `spec/ATOM_METADATA_DOC.md`,
+    and `desk/atoms/kb/bootstrap/query/atom-cross-tags-should-mark-bridge-knowledge-between-systems-and-projects.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:tag_namespaces_yaml
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:meta
+    role:
+    - role:governance_rule
+- atom_id: atom-metadata-registry-records-should-be-the-canonical-query-surface-for-governance-facets
+  path: .knowledge/atoms/atom-metadata-registry-records-should-be-the-canonical-query-surface-for-governance-facets.md
+  title: Metadata registry records should be the canonical query surface for governance
+    facets
+  provenance_statement: Derived from `metadata/atoms/atom-metadata-registry.yaml`,
+    `spec/ATOM_METADATA_DOC.md`, and the local `knowledge` CLI metadata commands.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:atom_metadata_registry
+    source_kind:
+    - source_kind:generated_spec
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:meta
+    role:
+    - role:retrieval_rule
+- atom_id: atom-knowledge-list-atoms-should-optimize-corpus-discovery-and-duplicate-avoidance-during-authoring
+  path: .knowledge/atoms/atom-knowledge-list-atoms-should-optimize-corpus-discovery-and-duplicate-avoidance-during-authoring.md
+  title: Knowledge list atoms should optimize corpus discovery and duplicate avoidance
+    during authoring
+  provenance_statement: Derived from `knowledge`, `spec/DESKOPS_FOR_KNOWLEDGE_MANAGEMENT.md`,
+    and `spec/source_apps/deskops.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:authoring
+    role:
+    - role:workflow_rule
+- atom_id: atom-knowledge-show-atom-should-surface-the-full-authoring-payload-in-one-inspection-view
+  path: .knowledge/atoms/atom-knowledge-show-atom-should-surface-the-full-authoring-payload-in-one-inspection-view.md
+  title: Knowledge show atom should surface the full authoring payload in one inspection
+    view
+  provenance_statement: Derived from `knowledge`, `spec/DESKOPS_FOR_KNOWLEDGE_MANAGEMENT.md`,
+    and `spec/atom_quality/ATOM_AUTHORING_PROCEDURE.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:authoring
+    role:
+    - role:workflow_rule
+- atom_id: atom-knowledge-add-atom-should-create-a-valid-atom-from-the-minimum-durable-knowledge-fields
+  path: .knowledge/atoms/atom-knowledge-add-atom-should-create-a-valid-atom-from-the-minimum-durable-knowledge-fields.md
+  title: Knowledge add atom should create a valid atom from the minimum durable knowledge
+    fields
+  provenance_statement: Derived from `knowledge`, `spec/DESKOPS_FOR_KNOWLEDGE_MANAGEMENT.md`,
+    and `spec/atom_quality/ATOM_AUTHORING_PROCEDURE.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:authoring
+    role:
+    - role:workflow_rule
+- atom_id: atom-knowledge-set-metadata-should-support-post-creation-enrichment-without-reopening-the-atom-text
+  path: .knowledge/atoms/atom-knowledge-set-metadata-should-support-post-creation-enrichment-without-reopening-the-atom-text.md
+  title: Knowledge set metadata should support post-creation enrichment without reopening
+    the atom text
+  provenance_statement: Derived from `knowledge`, `spec/atom_quality/ATOM_AUTHORING_PROCEDURE.md`,
+    and `metadata/atoms/atom-metadata-registry.yaml`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:authoring
+    role:
+    - role:workflow_rule
+- atom_id: atom-knowledge-validate-should-be-the-authoring-completion-gate-not-only-a-storage-health-check
+  path: .knowledge/atoms/atom-knowledge-validate-should-be-the-authoring-completion-gate-not-only-a-storage-health-check.md
+  title: Knowledge validate should be the authoring completion gate, not only a storage
+    health check
+  provenance_statement: Derived from `knowledge`, `spec/atom_quality/ATOM_AUTHORING_PROCEDURE.md`,
+    and `spec/atom_quality/ATOM_QUALITY_CHECKLIST.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:validation
+    role:
+    - role:governance_rule
+- atom_id: atom-graph-build-should-be-the-projection-refresh-boundary-between-documents-and-graph-retrieval
+  path: .knowledge/atoms/atom-graph-build-should-be-the-projection-refresh-boundary-between-documents-and-graph-retrieval.md
+  title: Graph build should be the projection refresh boundary between documents and
+    graph retrieval
+  provenance_statement: Derived from `knowledge`, `spec/source_apps/kgdb.md`, and
+    `spec/GRAPH_ARCHITECTURE.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:graph_surface
+    role:
+    - role:modeling_rule
+- atom_id: atom-knowledge-graph-list-should-provide-fast-snapshot-native-node-inventory-without-semantic-reinterpretation
+  path: .knowledge/atoms/atom-knowledge-graph-list-should-provide-fast-snapshot-native-node-inventory-without-semantic-reinterpretation.md
+  title: Knowledge graph list should provide fast snapshot-native node inventory without
+    semantic reinterpretation
+  provenance_statement: Derived from `knowledge` and `.sldb/runtime/knowledge_graph.kg.json`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_graph_snapshot
+    source_kind:
+    - source_kind:generated_spec
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:graph_surface
+    role:
+    - role:retrieval_rule
+- atom_id: atom-knowledge-graph-show-should-expose-raw-node-identity-semantics-path-and-edge-payloads-for-auditability
+  path: .knowledge/atoms/atom-knowledge-graph-show-should-expose-raw-node-identity-semantics-path-and-edge-payloads-for-auditability.md
+  title: Knowledge graph show should expose raw node identity semantics path and edge
+    payloads for auditability
+  provenance_statement: Derived from `knowledge` and `spec/GRAPH_ARCHITECTURE.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:graph_surface
+    role:
+    - role:retrieval_rule
+- atom_id: atom-graph-neighbors-should-remain-explicit-adjacency-inspection-rather-than-inferred-conceptual-similarity
+  path: .knowledge/atoms/atom-graph-neighbors-should-remain-explicit-adjacency-inspection-rather-than-inferred-conceptual-similarity.md
+  title: Graph neighbors should remain explicit adjacency inspection rather than inferred
+    conceptual similarity
+  provenance_statement: Derived from `knowledge` and `spec/GRAPH_ARCHITECTURE.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:graph_surface
+    role:
+    - role:definition
+- atom_id: atom-graph-trace-should-answer-provenance-lineage-across-the-source-sample-atom-composition-chain
+  path: .knowledge/atoms/atom-graph-trace-should-answer-provenance-lineage-across-the-source-sample-atom-composition-chain.md
+  title: Graph trace should answer provenance lineage across the source sample atom
+    composition chain
+  provenance_statement: Derived from `knowledge`, `spec/source_apps/kgdb.md`, and
+    `spec/GRAPH_ARCHITECTURE.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_cli_impl
+    source_kind:
+    - source_kind:source_file
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:graph_surface
+    role:
+    - role:modeling_rule
+- atom_id: atom-a-zero-edge-graph-snapshot-should-be-treated-as-an-incomplete-provenance-build-rather-than-a-healthy-graph
+  path: .knowledge/atoms/atom-a-zero-edge-graph-snapshot-should-be-treated-as-an-incomplete-provenance-build-rather-than-a-healthy-graph.md
+  title: A zero-edge graph snapshot should be treated as an incomplete provenance
+    build rather than a healthy graph
+  provenance_statement: Derived from `.sldb/runtime/knowledge_graph.kg.json` and `spec/GRAPH_ARCHITECTURE.md`.
+  metadata_tags:
+    project:
+    - project:kb
+    source:
+    - source:knowledge_graph_snapshot
+    source_kind:
+    - source_kind:generated_spec
+    grounding:
+    - grounding:derived
+    scope:
+    - scope:graph_surface
+    role:
+    - role:governance_rule

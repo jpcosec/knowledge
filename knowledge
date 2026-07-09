@@ -1,0 +1,542 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import json
+import subprocess
+import sys
+from collections import defaultdict
+from dataclasses import dataclass
+from pathlib import Path
+import re
+import shutil
+from typing import Any
+
+import yaml
+
+
+ATOM_QUESTIONS = ["what", "why", "how", "how_not", "when", "where", "for_whom"]
+FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n(.*)$", re.S)
+HEADING_RE = re.compile(r"^#\s+(.+)$", re.M)
+ANSWER_RE = re.compile(r"## Answer\n\n(.*?)(?:\n## |\Z)", re.S)
+TAG_RE = re.compile(r"^[a-z][a-z0-9_]*:[a-z][a-z0-9_-]*$")
+
+
+@dataclass
+class Atom:
+    path: Path
+    frontmatter: dict[str, Any]
+    body: str
+
+    @property
+    def id(self) -> str:
+        return str(self.frontmatter.get("id", ""))
+
+    @property
+    def title(self) -> str:
+        return str(self.frontmatter.get("title", ""))
+
+    @property
+    def five_wh_one_plus(self) -> str:
+        return str(self.frontmatter.get("five_wh_one_plus", ""))
+
+    @property
+    def tags(self) -> list[str]:
+        tags = self.frontmatter.get("tags") or []
+        return [str(tag) for tag in tags]
+
+    @property
+    def provenance(self) -> str:
+        return str(self.frontmatter.get("provenance", ""))
+
+    @property
+    def answer(self) -> str:
+        match = ANSWER_RE.search(self.body)
+        return match.group(1).strip() if match else ""
+
+    def to_dict(self, root: Path) -> dict[str, Any]:
+        return {
+            "id": self.id,
+            "title": self.title,
+            "five_wh_one_plus": self.five_wh_one_plus,
+            "tags": self.tags,
+            "provenance": self.provenance,
+            "answer": self.answer,
+            "path": self.path.relative_to(root).as_posix(),
+        }
+
+
+def repo_root(value: str) -> Path:
+    return Path(value).resolve()
+
+
+def atoms_dir(root: Path) -> Path:
+    preferred = root / ".knowledge" / "atoms"
+    legacy = root / "desk" / "atoms"
+    return preferred if preferred.exists() or not legacy.exists() else legacy
+
+
+def metadata_registry_path(root: Path) -> Path:
+    return root / "metadata" / "atoms" / "atom-metadata-registry.yaml"
+
+
+def namespaces_path(root: Path) -> Path:
+    preferred = root / ".knowledge" / "atoms" / "tag-namespaces.yaml"
+    legacy = root / "desk" / "atoms" / "tag-namespaces.yaml"
+    return preferred if preferred.exists() or not legacy.exists() else legacy
+
+
+def graph_snapshot_path(root: Path) -> Path:
+    return root / ".sldb" / "runtime" / "knowledge_graph.kg.json"
+
+
+def load_atom(path: Path) -> Atom:
+    text = path.read_text(encoding="utf-8")
+    match = FRONTMATTER_RE.match(text)
+    if not match:
+        raise SystemExit(f"Invalid atom frontmatter: {path}")
+    frontmatter_text, body = match.groups()
+    frontmatter = yaml.safe_load(frontmatter_text) or {}
+    if not isinstance(frontmatter, dict):
+        raise SystemExit(f"Invalid atom frontmatter mapping: {path}")
+    return Atom(path=path, frontmatter=frontmatter, body=body)
+
+
+def iter_atoms(root: Path) -> list[Atom]:
+    out: list[Atom] = []
+    for path in sorted(atoms_dir(root).rglob("*.md")):
+        out.append(load_atom(path))
+    return out
+
+
+def select_atom(root: Path, selector: str) -> Atom:
+    atoms = iter_atoms(root)
+    exact = [a for a in atoms if selector in {a.id, a.path.name, a.path.stem}]
+    if len(exact) == 1:
+        return exact[0]
+    if len(exact) > 1:
+        raise SystemExit(f"Ambiguous selector: {selector}")
+    fuzzy = [a for a in atoms if selector in a.id or selector in a.path.stem]
+    if len(fuzzy) == 1:
+        return fuzzy[0]
+    if not fuzzy:
+        raise SystemExit(f"Atom not found: {selector}")
+    raise SystemExit("Ambiguous selector: " + selector + "\n" + "\n".join(a.id for a in fuzzy[:20]))
+
+
+def load_metadata_registry(root: Path) -> dict[str, Any]:
+    path = metadata_registry_path(root)
+    if not path.exists():
+        return {
+            "id": "atom-metadata-registry",
+            "title": "Atom metadata registry",
+            "document_kind": "atom_metadata_registry",
+            "description": "Metadata moved out of atom documents so atoms can remain pure knowledge units.",
+            "records": [],
+        }
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    if not isinstance(data, dict):
+        raise SystemExit("Invalid metadata registry")
+    data.setdefault("records", [])
+    return data
+
+
+def save_metadata_registry(root: Path, data: dict[str, Any]) -> None:
+    path = metadata_registry_path(root)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
+
+
+def metadata_record_by_atom_id(registry: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    return {str(record.get("atom_id")): record for record in registry.get("records", []) if isinstance(record, dict)}
+
+
+def slugify(value: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    slug = re.sub(r"-+", "-", slug)
+    return slug
+
+
+def grouped_metadata_tags(values: list[str]) -> dict[str, list[str]]:
+    grouped: dict[str, list[str]] = defaultdict(list)
+    for tag in values:
+        if not TAG_RE.match(tag):
+            raise SystemExit(f"Invalid metadata tag: {tag}")
+        namespace, _ = tag.split(":", 1)
+        grouped[namespace].append(tag)
+    return dict(grouped)
+
+
+def validate_semantic_tags(values: list[str]) -> None:
+    for tag in values:
+        if not TAG_RE.match(tag):
+            raise SystemExit(f"Invalid tag: {tag}")
+
+
+def cmd_list_atoms(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    atoms = [atom.to_dict(root) for atom in iter_atoms(root)]
+    if args.format == "json":
+        print(json.dumps(atoms, indent=2, ensure_ascii=False))
+        return 0
+    for atom in atoms:
+        print(f"{atom['id']} | {atom['title']}")
+    return 0
+
+
+def cmd_show_atom(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    atom = select_atom(root, args.selector)
+    data = atom.to_dict(root)
+    if args.format == "json":
+        print(json.dumps(data, indent=2, ensure_ascii=False))
+        return 0
+    print(f"ID: {atom.id}")
+    print(f"Title: {atom.title}")
+    print(f"Question: {atom.five_wh_one_plus}")
+    print(f"Path: {atom.path.relative_to(root).as_posix()}")
+    print("Tags:")
+    for tag in atom.tags:
+        print(f"  - {tag}")
+    if atom.provenance:
+        print(f"Provenance: {atom.provenance}")
+    print("\nAnswer:\n")
+    print(atom.answer)
+    return 0
+
+
+def cmd_add_atom(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    semantic_tags = args.tags or []
+    validate_semantic_tags(semantic_tags)
+    metadata_tags = args.metadata_tag or []
+    metadata_grouped = grouped_metadata_tags(metadata_tags)
+
+    title = args.title.strip()
+    atom_id = args.id or f"atom-{slugify(title)}"
+    if not slugify(title):
+        raise SystemExit("Title is required")
+
+    target = atoms_dir(root) / f"{atom_id}.md"
+    if target.exists():
+        raise SystemExit(f"Atom already exists: {target}")
+    target.parent.mkdir(parents=True, exist_ok=True)
+
+    payload = {
+        "id": atom_id,
+        "title": title,
+        "five_wh_one_plus": args.five_wh_one_plus,
+        "tags": semantic_tags,
+        "provenance": args.provenance or "",
+    }
+    frontmatter = yaml.safe_dump(payload, sort_keys=False, allow_unicode=True).strip()
+    body = f"---\n{frontmatter}\n---\n\n# {title}\n\n## Answer\n\n{args.answer.strip()}\n"
+    target.write_text(body, encoding="utf-8")
+
+    registry = load_metadata_registry(root)
+    records = registry.setdefault("records", [])
+    record = {
+        "atom_id": atom_id,
+        "path": target.relative_to(root).as_posix(),
+        "title": title,
+    }
+    if args.provenance:
+        record["provenance_statement"] = args.provenance
+    if metadata_grouped:
+        record["metadata_tags"] = metadata_grouped
+    records.append(record)
+    save_metadata_registry(root, registry)
+
+    print(target.relative_to(root).as_posix())
+    return 0
+
+
+def cmd_list_metadata(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    registry = load_metadata_registry(root)
+    records = registry.get("records", [])
+    if args.format == "json":
+        print(json.dumps(records, indent=2, ensure_ascii=False))
+        return 0
+    for record in records:
+        atom_id = record.get("atom_id", "")
+        namespaces = sorted((record.get("metadata_tags") or {}).keys())
+        print(f"{atom_id} | {', '.join(namespaces) if namespaces else '-'}")
+    return 0
+
+
+def cmd_show_metadata(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    atom = select_atom(root, args.selector)
+    registry = load_metadata_registry(root)
+    record = metadata_record_by_atom_id(registry).get(atom.id)
+    if record is None:
+        raise SystemExit(f"Metadata not found for atom: {atom.id}")
+    if args.format == "json":
+        print(json.dumps(record, indent=2, ensure_ascii=False))
+        return 0
+    print(yaml.safe_dump(record, sort_keys=False, allow_unicode=True).strip())
+    return 0
+
+
+def cmd_set_metadata(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    atom = select_atom(root, args.selector)
+    registry = load_metadata_registry(root)
+    records = registry.setdefault("records", [])
+    by_id = metadata_record_by_atom_id(registry)
+    record = by_id.get(atom.id)
+    if record is None:
+        record = {"atom_id": atom.id, "path": atom.path.relative_to(root).as_posix(), "title": atom.title}
+        records.append(record)
+    if args.provenance_statement is not None:
+        if args.provenance_statement:
+            record["provenance_statement"] = args.provenance_statement
+        else:
+            record.pop("provenance_statement", None)
+    if args.metadata_tag is not None:
+        record["metadata_tags"] = grouped_metadata_tags(args.metadata_tag)
+    save_metadata_registry(root, registry)
+    print(atom.id)
+    return 0
+
+
+def cmd_list_namespaces(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    data = yaml.safe_load(namespaces_path(root).read_text(encoding="utf-8")) or {}
+    namespaces = data.get("namespaces", {})
+    if args.format == "json":
+        print(json.dumps(namespaces, indent=2, ensure_ascii=False))
+        return 0
+    for name in sorted(namespaces):
+        print(name)
+    return 0
+
+
+def run_command(command: list[str], root: Path) -> int:
+    result = subprocess.run(command, cwd=root)
+    return result.returncode
+
+
+def load_graph_snapshot(root: Path, graph: str | None = None) -> dict[str, Any]:
+    path = Path(graph).resolve() if graph else graph_snapshot_path(root)
+    if not path.exists():
+        raise SystemExit(f"Graph snapshot not found: {path}")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def snapshot_nodes(snapshot: dict[str, Any]) -> list[dict[str, Any]]:
+    return snapshot.get("nodes", [])
+
+
+def find_snapshot_node(snapshot: dict[str, Any], selector: str) -> dict[str, Any]:
+    nodes = snapshot_nodes(snapshot)
+    exact = []
+    fuzzy = []
+    for node in nodes:
+        identity = node.get("identity", {})
+        semantics = node.get("semantics", {})
+        node_id = identity.get("node_id", "")
+        label = semantics.get("label", "")
+        path = semantics.get("path", "")
+        values = {str(node_id), str(label), str(path)}
+        if selector in values:
+            exact.append(node)
+        elif selector in str(node_id) or selector in str(label) or selector in str(path):
+            fuzzy.append(node)
+    if len(exact) == 1:
+        return exact[0]
+    if len(exact) > 1:
+        raise SystemExit(f"Ambiguous graph selector: {selector}")
+    if len(fuzzy) == 1:
+        return fuzzy[0]
+    if not fuzzy:
+        raise SystemExit(f"Graph node not found: {selector}")
+    raise SystemExit("Ambiguous graph selector: " + selector)
+
+
+def cmd_graph_build(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    return run_command(["deskops", "graph", "build", "--root", "."], root)
+
+
+def cmd_graph_missing(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    command = ["deskops", "graph", "missing", "--root", "."]
+    if args.graph:
+        command += ["--graph", args.graph]
+    return run_command(command, root)
+
+
+def cmd_graph_neighbors(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    command = ["deskops", "graph", "neighbors", args.selector, "--root", "."]
+    if args.graph:
+        command += ["--graph", args.graph]
+    return run_command(command, root)
+
+
+def cmd_graph_trace(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    command = ["deskops", "graph", "trace", args.selector, "--root", "."]
+    if args.graph:
+        command += ["--graph", args.graph]
+    return run_command(command, root)
+
+
+def cmd_graph_list(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    snapshot = load_graph_snapshot(root, args.graph)
+    nodes = []
+    for node in snapshot_nodes(snapshot):
+        identity = node.get("identity", {})
+        semantics = node.get("semantics", {})
+        nodes.append({
+            "id": identity.get("node_id", ""),
+            "type": identity.get("node_type", ""),
+            "label": semantics.get("label", ""),
+            "path": semantics.get("path", ""),
+        })
+    if args.type:
+        nodes = [node for node in nodes if node["type"] == args.type]
+    if args.format == "json":
+        print(json.dumps(nodes, indent=2, ensure_ascii=False))
+        return 0
+    for node in nodes:
+        print(f"{node['id']} | {node['label']}")
+    return 0
+
+
+def cmd_graph_show(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    snapshot = load_graph_snapshot(root, args.graph)
+    node = find_snapshot_node(snapshot, args.selector)
+    if args.format == "json":
+        print(json.dumps(node, indent=2, ensure_ascii=False))
+        return 0
+    identity = node.get("identity", {})
+    semantics = node.get("semantics", {})
+    print(f"ID: {identity.get('node_id','')}")
+    print(f"Type: {identity.get('node_type','')}")
+    print(f"Label: {semantics.get('label','')}")
+    if semantics.get("path"):
+        print(f"Path: {semantics.get('path','')}")
+    print(f"Edges: {len(node.get('edges', []))}")
+    print()
+    print(json.dumps(node, indent=2, ensure_ascii=False))
+    return 0
+
+
+def cmd_validate(args: argparse.Namespace) -> int:
+    root = repo_root(args.root)
+    commands = [
+        ["sldb", "stores", "update", "--store", ".sldb", "--pythonpath", "."],
+        ["sldb", "stores", "check", "--store", ".sldb"],
+        ["deskops", "graph", "missing", "--root", "."],
+    ]
+    for command in commands:
+        result = subprocess.run(command, cwd=root)
+        if result.returncode != 0:
+            return result.returncode
+    return 0
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(prog="knowledge", description="Knowledge-only CLI for atoms and atom metadata.")
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    list_p = sub.add_parser("list", help="List knowledge artifacts.")
+    list_sub = list_p.add_subparsers(dest="kind", required=True)
+    list_atoms = list_sub.add_parser("atoms", help="List atoms.")
+    list_atoms.add_argument("--root", default=".")
+    list_atoms.add_argument("--format", choices=["text", "json"], default="text")
+    list_atoms.set_defaults(func=cmd_list_atoms)
+    list_meta = list_sub.add_parser("metadata", help="List atom metadata records.")
+    list_meta.add_argument("--root", default=".")
+    list_meta.add_argument("--format", choices=["text", "json"], default="text")
+    list_meta.set_defaults(func=cmd_list_metadata)
+    list_ns = list_sub.add_parser("namespaces", help="List semantic tag namespaces.")
+    list_ns.add_argument("--root", default=".")
+    list_ns.add_argument("--format", choices=["text", "json"], default="text")
+    list_ns.set_defaults(func=cmd_list_namespaces)
+
+    show_p = sub.add_parser("show", help="Show one knowledge artifact.")
+    show_sub = show_p.add_subparsers(dest="kind", required=True)
+    show_atom = show_sub.add_parser("atom", help="Show one atom.")
+    show_atom.add_argument("selector")
+    show_atom.add_argument("--root", default=".")
+    show_atom.add_argument("--format", choices=["text", "json"], default="text")
+    show_atom.set_defaults(func=cmd_show_atom)
+    show_meta = show_sub.add_parser("metadata", help="Show metadata for one atom.")
+    show_meta.add_argument("selector")
+    show_meta.add_argument("--root", default=".")
+    show_meta.add_argument("--format", choices=["text", "json"], default="text")
+    show_meta.set_defaults(func=cmd_show_metadata)
+
+    add_p = sub.add_parser("add", help="Create knowledge artifacts.")
+    add_sub = add_p.add_subparsers(dest="kind", required=True)
+    add_atom = add_sub.add_parser("atom", help="Create one atom.")
+    add_atom.add_argument("--root", default=".")
+    add_atom.add_argument("--id")
+    add_atom.add_argument("--title", required=True)
+    add_atom.add_argument("--five-wh-one-plus", choices=ATOM_QUESTIONS, required=True)
+    add_atom.add_argument("--answer", required=True)
+    add_atom.add_argument("--tags", nargs="*", default=[])
+    add_atom.add_argument("--provenance", default="")
+    add_atom.add_argument("--metadata-tag", action="append", default=[])
+    add_atom.set_defaults(func=cmd_add_atom)
+
+    set_p = sub.add_parser("set-metadata", help="Create or replace metadata for one atom.")
+    set_p.add_argument("selector")
+    set_p.add_argument("--root", default=".")
+    set_p.add_argument("--provenance-statement")
+    set_p.add_argument("--metadata-tag", action="append")
+    set_p.set_defaults(func=cmd_set_metadata)
+
+    graph_p = sub.add_parser("graph", help="Knowledge graph commands.")
+    graph_sub = graph_p.add_subparsers(dest="graph_command", required=True)
+    graph_build = graph_sub.add_parser("build", help="Build the graph snapshot.")
+    graph_build.add_argument("--root", default=".")
+    graph_build.set_defaults(func=cmd_graph_build)
+    graph_missing = graph_sub.add_parser("missing", help="Report missing graph targets.")
+    graph_missing.add_argument("--root", default=".")
+    graph_missing.add_argument("--graph")
+    graph_missing.set_defaults(func=cmd_graph_missing)
+    graph_neighbors = graph_sub.add_parser("neighbors", help="Show graph neighbors for one node.")
+    graph_neighbors.add_argument("selector")
+    graph_neighbors.add_argument("--root", default=".")
+    graph_neighbors.add_argument("--graph")
+    graph_neighbors.set_defaults(func=cmd_graph_neighbors)
+    graph_trace = graph_sub.add_parser("trace", help="Trace one graph node.")
+    graph_trace.add_argument("selector")
+    graph_trace.add_argument("--root", default=".")
+    graph_trace.add_argument("--graph")
+    graph_trace.set_defaults(func=cmd_graph_trace)
+    graph_list = graph_sub.add_parser("list", help="List graph nodes from the snapshot.")
+    graph_list.add_argument("--root", default=".")
+    graph_list.add_argument("--graph")
+    graph_list.add_argument("--type")
+    graph_list.add_argument("--format", choices=["text", "json"], default="text")
+    graph_list.set_defaults(func=cmd_graph_list)
+    graph_show = graph_sub.add_parser("show", help="Show one graph node from the snapshot.")
+    graph_show.add_argument("selector")
+    graph_show.add_argument("--root", default=".")
+    graph_show.add_argument("--graph")
+    graph_show.add_argument("--format", choices=["text", "json"], default="text")
+    graph_show.set_defaults(func=cmd_graph_show)
+
+    validate_p = sub.add_parser("validate", help="Run knowledge-focused validation.")
+    validate_p.add_argument("--root", default=".")
+    validate_p.set_defaults(func=cmd_validate)
+
+    return parser
+
+
+def main() -> int:
+    parser = build_parser()
+    args = parser.parse_args()
+    return args.func(args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
