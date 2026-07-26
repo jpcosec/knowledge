@@ -2490,3 +2490,117 @@ records:
     - scope:graph_surface
     role:
     - role:governance_rule
+- atom_id: atom-semantic-milestone-markers-define-addressable-ranges-over-prose
+  path: .knowledge/atoms/atom-semantic-milestone-markers-define-addressable-ranges-over-prose.md
+  title: Semantic milestone markers define addressable ranges over prose
+- atom_id: atom-logical-ranges-as-the-addressable-units-for-anchoring
+  path: .knowledge/atoms/atom-logical-ranges-as-the-addressable-units-for-anchoring.md
+  title: Logical ranges as the addressable units for anchoring
+- atom_id: atom-anchor-references-follow-a-three-tier-scheme
+  path: .knowledge/atoms/atom-anchor-references-follow-a-three-tier-scheme.md
+  title: Anchor references follow a three-tier scheme
+- atom_id: atom-semantic-namespaces-define-independent-interpretation-rules
+  path: .knowledge/atoms/atom-semantic-namespaces-define-independent-interpretation-rules.md
+  title: Semantic namespaces define independent interpretation rules
+- atom_id: atom-graph-endpoint-addressability-requires-semantic-disambiguation
+  path: .knowledge/atoms/atom-graph-endpoint-addressability-requires-semantic-disambiguation.md
+  title: Graph-endpoint addressability requires semantic disambiguation
+- atom_id: atom-document-identity-resolves-from-explicit-frontmatter-first
+  path: .knowledge/atoms/atom-document-identity-resolves-from-explicit-frontmatter-first.md
+  title: Document identity resolves from explicit frontmatter first
+- atom_id: atom-validation-proceeds-through-5-layered-levels
+  path: .knowledge/atoms/atom-validation-proceeds-through-5-layered-levels.md
+  title: Validation proceeds through 5 layered levels
+- atom_id: atom-graph-edge-endpoints-validate-locally-defer-remotely
+  path: .knowledge/atoms/atom-graph-edge-endpoints-validate-locally-defer-remotely.md
+  title: Graph edge endpoints validate locally, defer remotely
+- atom_id: atom-offsets-and-spans-are-derived-evidence-not-durable-identity
+  path: .knowledge/atoms/atom-offsets-and-spans-are-derived-evidence-not-durable-identity.md
+  title: Offsets and spans are derived evidence, not durable identity
+- atom_id: atom-canonical-json-as-stable-interchange-format
+  path: .knowledge/atoms/atom-canonical-json-as-stable-interchange-format.md
+  title: Canonical JSON as stable interchange format
+- atom_id: atom-asg-projects-multiple-graphs-per-document
+  path: .knowledge/atoms/atom-asg-projects-multiple-graphs-per-document.md
+  title: ASG projects multiple graphs per document
+- atom_id: atom-validation-diagnostics-use-structured-codes
+  path: .knowledge/atoms/atom-validation-diagnostics-use-structured-codes.md
+  title: Validation diagnostics use structured codes
+- atom_id: atom-two-gates-model-s-i-sense-v-i-truth
+  path: .knowledge/atoms/atom-two-gates-model-s-i-sense-v-i-truth.md
+  title: Two Gates Model (S_i Sense, V_i Truth)
+- atom_id: atom-contradictions-stored-not-resolved
+  path: .knowledge/atoms/atom-contradictions-stored-not-resolved.md
+  title: Contradictions Stored Not Resolved
+- atom_id: atom-relation-algebra
+  path: .knowledge/atoms/atom-relation-algebra.md
+  title: Relation Algebra
+- atom_id: atom-entity-indexed-by-relation-participation
+  path: .knowledge/atoms/atom-entity-indexed-by-relation-participation.md
+  title: Entity Indexed by Relation Participation
+- atom_id: atom-text-as-syntactic-sugar-over-graph-smg-model
+  path: .knowledge/atoms/atom-text-as-syntactic-sugar-over-graph-smg-model.md
+  title: Text as Syntactic Sugar over Graph (SMG Model)
+- atom_id: atom-facets-as-boolean-matrix-projections
+  path: .knowledge/atoms/atom-facets-as-boolean-matrix-projections.md
+  title: Facets as Boolean Matrix Projections
+- atom_id: atom-proposition-first-architecture
+  path: .knowledge/atoms/atom-proposition-first-architecture.md
+  title: Proposition-First Architecture
+- atom_id: atom-wigame-as-local-language-game
+  path: .knowledge/atoms/atom-wigame-as-local-language-game.md
+  title: WiGame as Local Language Game
+- atom_id: atom-context-and-hierarchical-routing
+  path: .knowledge/atoms/atom-context-and-hierarchical-routing.md
+  title: Context and Hierarchical Routing
+- atom_id: atom-proposition-lifecycle-semantic-status-classification
+  path: .knowledge/atoms/atom-proposition-lifecycle-semantic-status-classification.md
+  title: Proposition Lifecycle / Semantic Status Classification
+- atom_id: atom-meel-engine
+  path: .knowledge/atoms/atom-meel-engine.md
+  title: MEEL Engine
+- atom_id: atom-information-energy-e-r
+  path: .knowledge/atoms/atom-information-energy-e-r.md
+  title: Information Energy E(R)
+- atom_id: atom-don-t-care-rule
+  path: .knowledge/atoms/atom-don-t-care-rule.md
+  title: Don't Care Rule
+- atom_id: atom-structural-masks-valid-sense-observed-discriminative
+  path: .knowledge/atoms/atom-structural-masks-valid-sense-observed-discriminative.md
+  title: Structural Masks (Valid, Sense, Observed, Discriminative)
+- atom_id: atom-dimensional-collapse-and-hierarchical-tensor-n-x-n-x-c-k
+  path: .knowledge/atoms/atom-dimensional-collapse-and-hierarchical-tensor-n-x-n-x-c-k.md
+  title: Dimensional Collapse and Hierarchical Tensor (N x N x C^k)
+- atom_id: atom-kernel-symbol-policy
+  path: .knowledge/atoms/atom-kernel-symbol-policy.md
+  title: Kernel Symbol Policy
+- atom_id: atom-boolean-algebra-and-bitwise-execution-kernel
+  path: .knowledge/atoms/atom-boolean-algebra-and-bitwise-execution-kernel.md
+  title: Boolean Algebra and Bitwise Execution Kernel
+- atom_id: atom-omnirepresentacion-block-matrix-for-llm-integration
+  path: .knowledge/atoms/atom-omnirepresentacion-block-matrix-for-llm-integration.md
+  title: Omnirepresentacion / Block Matrix for LLM Integration
+- atom_id: atom-grafo-indice-g-index-graph-and-collision-detection
+  path: .knowledge/atoms/atom-grafo-indice-g-index-graph-and-collision-detection.md
+  title: Grafo Indice G / Index Graph and Collision Detection
+- atom_id: atom-atomic-fact-c-x-d-x-v
+  path: .knowledge/atoms/atom-atomic-fact-c-x-d-x-v.md
+  title: Atomic Fact (C x D x V)
+- atom_id: atom-searchvector
+  path: .knowledge/atoms/atom-searchvector.md
+  title: SearchVector
+- atom_id: atom-s-expression-runtime
+  path: .knowledge/atoms/atom-s-expression-runtime.md
+  title: S-Expression Runtime
+- atom_id: atom-pure-matrices-vs-block-matrices
+  path: .knowledge/atoms/atom-pure-matrices-vs-block-matrices.md
+  title: Pure Matrices vs Block Matrices
+- atom_id: atom-logicalsystem-as-aggregate-root
+  path: .knowledge/atoms/atom-logicalsystem-as-aggregate-root.md
+  title: LogicalSystem as Aggregate Root
+- atom_id: atom-universal-grammar-formalization
+  path: .knowledge/atoms/atom-universal-grammar-formalization.md
+  title: Universal Grammar Formalization
+- atom_id: atom-typestate-typing
+  path: .knowledge/atoms/atom-typestate-typing.md
+  title: Typestate Typing
