@@ -126,7 +126,7 @@ Capacidad de revisar no solo “si suena bien”, sino si cumple un estándar ex
 Incluye:
 
 - usar checklist
-- identificar nivel de calidad
+- decidir con claridad si el átomo pasa o falla la aceptación mínima
 - justificar por qué un átomo se acepta o se devuelve a refinamiento
 
 ---

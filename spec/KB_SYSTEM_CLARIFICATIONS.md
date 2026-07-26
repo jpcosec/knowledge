@@ -299,7 +299,25 @@ Pero con esta aclaración importante:
 
 ---
 
-## 11. Qué debe reforzarse en el spec principal
+## 11. Sobre las capas del sistema
+
+Las capas `source -> sample -> atom -> composición/superficie` son
+distinciones funcionales, no castas ontológicas rígidas.
+
+Sirven para separar responsabilidades:
+
+- la fuente conserva el artefacto o snapshot de referencia
+- el sample conserva el corte verificable y anotable
+- el átomo conserva la tesis reusable
+- la composición conserva la recombinación o materialización para lectura o trabajo
+
+Un mismo artefacto puede participar en más de una cadena de trabajo, pero esa
+flexibilidad no elimina la necesidad de distinguir qué rol está cumpliendo en
+cada momento.
+
+---
+
+## 12. Qué debe reforzarse en el spec principal
 
 Estas aclaraciones sugieren reforzar explícitamente en `KB_SYSTEM_SPEC.md` que:
 
@@ -312,7 +330,7 @@ Estas aclaraciones sugieren reforzar explícitamente en `KB_SYSTEM_SPEC.md` que:
 
 ---
 
-## 12. Resumen corto
+## 13. Resumen corto
 
 ### Hash
 El hash clave es el de la fuente, no el del sample como superficie editable.

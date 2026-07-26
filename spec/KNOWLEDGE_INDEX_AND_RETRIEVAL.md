@@ -67,6 +67,14 @@ The KB should have both:
 The tree, tags, and naming structure are not enough by themselves.
 They support retrieval, but they do not determine the best answer set for every question.
 
+In short:
+
+- the index is the organized graph-like surface of the corpus
+- retrieval is the contextual composition of the right atoms from that corpus
+
+After that distinction is clear, the system can reuse familiar IR techniques
+for ranking, filtering, and query expansion instead of reinventing them.
+
 ## Why the distinction matters
 
 Two atoms can be far apart in the tree and still both be relevant to one question.
@@ -203,9 +211,9 @@ A retrieval flow should generally do some version of the following:
 3. detect likely topic and system dimensions
 4. estimate scope and abstraction level
 5. preselect relevant branches of the tree
-6. gather candidate atoms from those branches and related facets
+6. gather candidate atoms from those branches, relations, and related facets
 7. rank or filter candidates
-8. return a useful subset in a useful order
+8. compose and return a useful subset in a useful order
 
 ## Important retrieval dimensions
 
@@ -285,7 +293,7 @@ A good index becomes much more useful when retrieval can interpret context.
 So the relationship is:
 
 - indexation organizes the corpus
-- retrieval selects the right slice of the corpus
+- retrieval selects and composes the right slice of the corpus
 
 ## Implications for the `knowledge` CLI
 

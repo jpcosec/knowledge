@@ -258,18 +258,23 @@ tags:
 - debe ser reversible hacia la fuente
 - debe declarar método de anchor
 - debe guardar evidencia textual suficiente
+- no necesita un tamaño uniforme; necesita direccionabilidad y verificación
 
 ### Átomo
 - debe ser pequeño
-- debe responder una sola pregunta
+- debe responder una sola pregunta 5WH1+
 - debe poder rastrearse a una o más biopsias
+- debe ganar profundidad por composición, no por inflación
 
 ## Flujo recomendado
+
+Este flujo es una disciplina operativa recomendada, no una máquina rígida de
+fases del sistema.
 
 1. registrar fuente
 2. calcular hash
 3. crear biopsia
-4. anotar biopsia inline
+4. anotar biopsia inline con `marcado`
 5. destilar átomo
 6. enlazar átomo a sample vía provenance
 7. indexar con SLDB

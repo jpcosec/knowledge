@@ -47,7 +47,7 @@ Cada revisión debería seguir esta secuencia.
 4. revisar atomicidad
 5. revisar tags
 6. revisar procedencia
-7. revisar nivel de madurez
+7. decidir si pasa o falla la checklist mínima
 8. decidir: aceptar, refinar, dividir o fusionar
 
 ---
@@ -139,7 +139,6 @@ Conviene mirar métricas simples como:
 - porcentaje con tags no vacíos
 - porcentaje con procedencia explícita
 - porcentaje sin residuos de template
-- porcentaje clasificado por `role:*`
 - porcentaje de answers con sustancia suficiente
 - cantidad de átomos candidatos a división o fusión
 

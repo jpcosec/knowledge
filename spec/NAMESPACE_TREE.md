@@ -6,6 +6,13 @@ Draft
 ## Propósito
 Proponer un árbol de namespaces sobre todo lo trabajado hasta ahora en `/home/jp/Upla/kb/spec`.
 
+Este documento usa forma de árbol solo como proyección de trabajo.
+No afirma que los namespaces formen una jerarquía única y fija.
+
+La estructura real es mejor entendida como un conjunto de facetas o anillos
+relacionados: cada namespace recorta una dimensión distinta del KB y desde
+cada dimensión pueden derivarse árboles útiles.
+
 Este árbol no es todavía un schema técnico definitivo.
 Su función es:
 
@@ -58,6 +65,21 @@ El árbol distingue varias familias semánticas de primer nivel.
 
 La idea es que no todo se meta en `topic:*`.
 Cada familia expresa un tipo distinto de cosa.
+
+## Uso mínimo actual
+
+Para authoring y revisión corriente, la superficie mínima útil hoy es:
+
+- `system:*`
+- `topic:*`
+- `layer:*` cuando aporta ubicación arquitectónica real
+- `entity:*` cuando aclara qué cosa se está modelando
+- `graph:*` cuando la afirmación trata una estratificación de grafo
+- `domain:*` cuando la afirmación cruza un dominio más amplio
+
+En cambio, `project:*`, `source:*`, `source_kind:*`, `grounding:*`, `status:*`,
+`role:*` y namespaces equivalentes pertenecen primariamente al metadata
+registry del átomo cuando describen curación, origen o estado editorial.
 
 ---
 
@@ -718,7 +740,6 @@ Buenos candidatos para tags ligeros:
 - `source:*`
 - `projection:*`
 - `app:*`
-- `grounding:*`
 
 ## 12.2 Qué no reducir solo a tags
 

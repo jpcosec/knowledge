@@ -198,7 +198,11 @@ Tratarla como:
 
 ## 6. Estrategia general del bootstrap
 
-## Fase A — Declarar el corpus actual como KB inicial válida
+Este bootstrap no debe gestionarse como un roadmap rígido por fases.
+La organización operativa puede vivir en `desk/tasks` y `desk/drawers` sin
+congelar aquí una secuencia ceremonial que luego nos estorbe.
+
+## 6.1 Declarar el corpus actual como KB inicial válida
 
 Debemos poder decir sin vergüenza:
 
@@ -212,7 +216,7 @@ Pero también:
 - su concept graph es implícito
 - su structural graph es inexistente o embrionario
 
-## Fase B — Extraer estructura explícita sin reescribir el corpus
+## 6.2 Extraer estructura explícita sin reescribir el corpus
 
 En vez de reescribir todos los átomos ya, conviene derivar capas nuevas a partir de ellos:
 
@@ -221,7 +225,7 @@ En vez de reescribir todos los átomos ya, conviene derivar capas nuevas a parti
 3. provenance-minimum layer
 4. graph materialization layer
 
-## Fase C — Introducir samples hacia adelante, no retroforzar todo de una vez
+## 6.3 Introducir samples hacia adelante, no retroforzar todo de una vez
 
 No hace falta reconstruir toda la KB histórica antes de seguir avanzando.
 

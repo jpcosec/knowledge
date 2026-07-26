@@ -184,6 +184,15 @@ El patrón más valioso es este:
 2. **intermediate logical/operable structure**
 3. **persistent graph layer**
 
+En la relectura actual, esa IR no necesita ser una sola estructura canónica.
+Puede aparecer como una cadena de representaciones cada vez menos azucaradas,
+por ejemplo:
+
+- texto natural
+- átomos u otros documentos estructurados
+- grafos locales
+- grafo indexado agregado
+
 ## Relectura en la arquitectura nueva
 
 La arquitectura actual puede leerse como una evolución/refinamiento de ese patrón:
@@ -284,6 +293,10 @@ Recuperamos de aquí:
 - importancia de queryabilidad por identificador estable
 - idea de materialización
 - necesidad de relaciones explícitas entre unidades de conocimiento
+
+Si `core/knowledge` sigue siendo localizable y útil, conviene releerlo como
+antecedente fuerte. Si no, basta con conservar la intuición arquitectónica sin
+forzarle un rol más central del que hoy puede sostener documentalmente.
 
 ## Relectura en la arquitectura nueva
 
@@ -458,7 +471,6 @@ Fuentes:
 ### Recuperar
 - KG-Trees como antecedente de IR
 - queryability
-- determinization
 - explicit edges
 - materialization
 - knowledge organ
@@ -466,6 +478,7 @@ Fuentes:
 
 ### Reinterpretar
 - NL -> SL -> KG hacia un modelo multi-source
+- determinization hacia niveles de representación más que una única forma canónica
 - wiki-centric organization hacia source/sample/atom/composition
 - atom extraction hacia reconstrucción relacional más rica
 
@@ -473,6 +486,7 @@ Fuentes:
 - dependencia en raw text como entrada principal única
 - mezcla excesiva entre loop autopoietico y KB central
 - semánticas demasiado acopladas a un shell específico
+- separaciones históricas de orquestación/sustrato que hoy ya no podamos explicar con precisión
 
 ---
 

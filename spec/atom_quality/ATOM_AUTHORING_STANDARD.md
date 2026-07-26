@@ -163,9 +163,6 @@ Según el caso, también pueden aparecer:
 - `graph:*`
 - `domain:*`
 - `cross:*`
-- `phase:*`
-- `bootstrap:*`
-- `cross:*`
 
 ### 5.3 Regla de humildad semántica
 
@@ -208,9 +205,13 @@ No es lo mismo:
 
 ---
 
-## 7. Tipos semánticos recomendados
+## 7. Clasificación de gobernanza recomendada
 
-Conviene que cada átomo pueda clasificarse por rol principal, por ejemplo:
+Conviene que cada átomo pueda clasificarse por rol principal para revisión y
+gobernanza, pero esa clasificación pertenece al metadata registry, no al
+núcleo semántico del tagset del átomo.
+
+Ejemplos frecuentes:
 
 - `role:definition`
 - `role:constraint`
@@ -220,8 +221,6 @@ Conviene que cada átomo pueda clasificarse por rol principal, por ejemplo:
 - `role:migration_rule`
 - `role:retrieval_rule`
 - `role:modeling_rule`
-
-Esto mejora revisión y recuperación.
 
 ---
 

@@ -145,23 +145,21 @@ Declarar la respuesta en el campo de frontmatter `provenance`.
 Asignar primero los tags mínimos:
 
 - `system:...`
-- `project:...`
-- `source:...`
-- `source_kind:...`
-- `scope:...`
+- `topic:...`
 
-Luego agregar los tags de rol y tema:
+Luego agregar solo los tags semánticos que realmente ayuden a recuperar la afirmación:
 
-- `topic:*`
 - `layer:*`
 - `entity:*`
 - `graph:*`
-- `method:*`
-- `role:*`
-- `grounding:*`
-- `provenance:*`
+- `domain:*`
+- `cross:*`
 
 No sobrecargar con tags irrelevantes.
+
+La metadata de curación u origen del átomo, como `project:*`, `source:*`,
+`source_kind:*`, `grounding:*`, `role:*` o `status:*`, pertenece al metadata
+registry y no al tagset semántico del átomo.
 
 ---
 

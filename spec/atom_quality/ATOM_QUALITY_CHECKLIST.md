@@ -55,7 +55,7 @@ Un átomo aceptable debe cumplir **todas** las condiciones siguientes.
 
 - [ ] Tiene tags no vacíos.
 - [ ] Los tags ayudan a recuperación, no reemplazan la semántica del átomo.
-- [ ] Incluye al menos tags de sistema/proyecto/fuente/tema o equivalentes.
+- [ ] Incluye al menos `system:*` y `topic:*` o equivalentes claramente justificables.
 - [ ] Los tags son coherentes con namespaces existentes.
 
 ---
@@ -105,41 +105,7 @@ Si aparece una o más de estas señales, el átomo debe revisarse.
 
 ---
 
-## 4. Escala práctica de calidad
-
-### Nivel 0 — Template incompleto
-
-- conserva placeholders
-- tags vacíos o inexistentes
-- sin procedencia
-- answer demasiado delgado
-
-### Nivel 1 — Átomo válido mínimo
-
-- estructura completa
-- una afirmación clara
-- tags mínimos
-- procedencia mínima
-- answer entendible
-
-### Nivel 2 — Átomo bueno
-
-- distinción conceptual clara
-- tags útiles
-- procedencia explícita
-- answer compacto pero sustantivo
-- buen potencial de reuse
-
-### Nivel 3 — Átomo fuerte
-
-- alta claridad semántica
-- alta utilidad para gobernanza o modelado
-- fácil de citar y recomponer
-- fuerte legibilidad humana y buena recuperación
-
----
-
-## 5. Regla simple de aceptación
+## 4. Regla simple de aceptación
 
 Un átomo no debería considerarse “terminado” si falla en cualquiera de estos puntos:
 

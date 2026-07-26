@@ -45,15 +45,18 @@ La estrategia de anchoring del sistema debe usar la mejor combinación disponibl
 
 ## 2. Principio rector de anchoring
 
-> Un sample debe anclarse usando la estructura más rica y estable disponible para ese tipo de fuente, reteniendo además evidencia textual suficiente para verificación independiente e inspección humana.
+> Un sample debe anclarse de forma verificable contra la fuente o snapshot sobre
+> el que realmente estamos trabajando, privilegiando la estructura direccionable
+> más útil disponible y reteniendo evidencia textual suficiente para verificación
+> independiente e inspección humana.
 
 Esto implica:
 
 - usar AST cuando existe una estructura AST útil
 - usar DOM o estructura documental cuando existe
 - usar layout o bloques de lectura cuando la fuente lo ofrece
-- usar quote textual como verificación y fallback
-- usar varios anchors coordinados cuando sea necesario
+- usar quote textual como verificación
+- usar varios anchors coordinados solo cuando realmente agregan robustez
 
 ---
 
@@ -95,6 +98,8 @@ Pero la arquitectura debe soportarlas explícitamente.
 ## 4. Proyecciones de una fuente
 
 Una fuente puede tener varias proyecciones simultáneas.
+La metadata vive como superficie separada; no queda "embebida" conceptualmente
+en las otras proyecciones aunque pueda derivarse de ellas.
 
 ## 4.1 Raw representation
 
@@ -317,11 +322,18 @@ Ejemplos:
 No todas las biopsias necesitan todos los componentes.
 Pero el sistema debe soportarlos como categorías explícitas.
 
+Un solo anchor primario bien elegido puede ser suficiente.
+Si existen anchors adicionales, deben ser complementarios, no contradictorios.
+El sistema no debe asumir un modelo de "conflicto entre anchors" como caso normal.
+
 ---
 
 ## 7. Source adapters y structure extractors
 
 Para soportar anchoring inteligente, la app debe ser modular.
+Estos cuatro nombres describen componentes de código o responsabilidades de
+runtime. Lo persistido en la KB son los anchors, bindings y resultados de
+validación relevantes, no necesariamente cada componente como objeto documental.
 
 ## 7.1 Source adapter
 
@@ -369,6 +381,8 @@ Responsable de:
 La validación no debe ser solo “¿aparece esta frase?”.
 
 Debe ser multicapa.
+No todas las capas aplican con el mismo peso a todos los tipos de anchor, pero
+la separación conceptual debe mantenerse.
 
 ## Nivel 1. Validación de identidad de fuente
 
@@ -446,7 +460,9 @@ Para headings, secciones, bloques, listas, tablas, celdas, capítulos.
 Para PDFs y otras fuentes con regiones, bloques o coordenadas.
 
 ### Metadata
-Para hash, path, url, commit, mime, timestamps, parser version, etc.
+Para hash, path, url, commit, mime, timestamps, parser version y demás facts
+del artefacto o de la extracción. Esta metadata debe mantenerse como documento
+o superficie separada, aunque se use para resolver anchors.
 
 AST debe existir como categoría explícita y no solo como una subnota técnica del parser.
 
